@@ -1,0 +1,36 @@
+# Godot-specific ignores
+.import/
+export.cfg
+export_presets.cfg
+.mono/
+data_*/
+
+# macOS-specific
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# IDE and editors
+.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# Build artifacts
+builds/
+*.pck
+*.exe
+*.dmg
+*.app
+*.apk
+*.ipa
+
+# Temporary files
+*.tmp
+*.log
