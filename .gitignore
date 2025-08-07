@@ -1,36 +1,72 @@
-# Godot-specific ignores
+# Godot 4+ specific ignores
+.godot/
 .import/
-export.cfg
-export_presets.cfg
+
+# Godot-specific ignores
+*.tmp
+*.translation
+*.import
+
+# Mono-specific ignores
 .mono/
 data_*/
+mono_crash.*.json
 
-# macOS-specific
+# System/Editor-specific ignores
 .DS_Store
-.AppleDouble
-.LSOverride
-Icon?
+.DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
+ehthumbs.db
+Thumbs.db
 
-# IDE and editors
-.vscode/settings.json
+# IDE-specific ignores
+.vscode/
+.idea/
 *.swp
 *.swo
 *~
 
-# Build artifacts
+# Build outputs
+exports/
 builds/
-*.pck
 *.exe
+*.pck
+*.zip
 *.dmg
 *.app
 *.apk
 *.ipa
 
-# Temporary files
-*.tmp
+# Logs and temporary files
 *.log
+*.tmp
+*.temp
+*.cache
+
+# User settings
+user://
+*.save
+
+# Asset source files (keep final assets, ignore sources)
+*.blend1
+*.blend2
+*.psd
+*.xcf
+*.kra
+
+# Large binary files (use Git LFS)
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.exr filter=lfs diff=lfs merge=lfs -text
+*.hdr filter=lfs diff=lfs merge=lfs -text
+*.tga filter=lfs diff=lfs merge=lfs -text
+*.bmp filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+*.webp filter=lfs diff=lfs merge=lfs -text
