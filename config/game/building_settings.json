@@ -1,0 +1,72 @@
+{
+  "grid_size": 1.0,
+  "max_build_distance": 10.0,
+  "build_height_limit": 20.0,
+  "max_pieces_per_player": 500,
+  "build_time_per_piece": 0.5,
+  "destroy_time_per_piece": 0.3,
+  "edit_time_per_piece": 0.4,
+  "resource_system": {
+    "starting_materials": 300,
+    "max_materials": 999,
+    "material_per_piece": {
+      "wall": 10,
+      "floor": 8,
+      "ramp": 12,
+      "roof": 15,
+      "stairs": 20
+    },
+    "material_refund_rate": 0.7
+  },
+  "piece_types": {
+    "wall": {
+      "health": 100,
+      "build_cost": 10,
+      "can_edit": true,
+      "edit_types": ["door", "window"]
+    },
+    "floor": {
+      "health": 80,
+      "build_cost": 8,
+      "can_edit": false,
+      "edit_types": []
+    },
+    "ramp": {
+      "health": 90,
+      "build_cost": 12,
+      "can_edit": false,
+      "edit_types": []
+    },
+    "roof": {
+      "health": 120,
+      "build_cost": 15,
+      "can_edit": false,
+      "edit_types": []
+    },
+    "stairs": {
+      "health": 110,
+      "build_cost": 20,
+      "can_edit": false,
+      "edit_types": []
+    }
+  },
+  "building_rules": {
+    "require_foundation": true,
+    "max_overhang": 3,
+    "support_required": true,
+    "collision_check": true,
+    "snap_to_grid": true
+  },
+  "preview_settings": {
+    "show_preview": true,
+    "preview_transparency": 0.5,
+    "valid_color": [0.0, 1.0, 0.0, 0.5],
+    "invalid_color": [1.0, 0.0, 0.0, 0.5]
+  },
+  "destruction": {
+    "damage_threshold": 50,
+    "chain_destruction": true,
+    "debris_lifetime": 5.0,
+    "explosion_radius": 2.0
+  }
+}

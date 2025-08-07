@@ -1,0 +1,48 @@
+{
+  "walk_speed": 5.0,
+  "run_speed": 8.0,
+  "jump_force": 12.0,
+  "dash_force": 15.0,
+  "dash_cooldown": 1.5,
+  "dash_duration": 0.3,
+  "wall_kick_force": 10.0,
+  "momentum_decay": 0.95,
+  "air_control": 0.3,
+  "gravity": 25.0,
+  "max_fall_speed": 30.0,
+  "coyote_time": 0.1,
+  "jump_buffer_time": 0.1,
+  "wall_slide_speed": 3.0,
+  "wall_jump_horizontal_force": 8.0,
+  "wall_jump_vertical_force": 10.0,
+  "ground_friction": 0.8,
+  "air_friction": 0.95,
+  "acceleration": {
+    "ground": 20.0,
+    "air": 10.0
+  },
+  "movement_states": {
+    "idle": {
+      "max_speed": 0.0,
+      "acceleration": 15.0
+    },
+    "walking": {
+      "max_speed": 5.0,
+      "acceleration": 20.0
+    },
+    "running": {
+      "max_speed": 8.0,
+      "acceleration": 25.0
+    },
+    "dashing": {
+      "max_speed": 15.0,
+      "acceleration": 50.0,
+      "invulnerable": true
+    }
+  },
+  "physics": {
+    "mass": 1.0,
+    "bounce": 0.0,
+    "friction": 1.0
+  }
+}

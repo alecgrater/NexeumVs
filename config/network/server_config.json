@@ -1,0 +1,45 @@
+{
+  "max_players": 2,
+  "tick_rate": 60,
+  "timeout_duration": 30.0,
+  "lag_compensation_buffer": 0.1,
+  "anti_cheat_enabled": true,
+  "server_regions": ["us-west"],
+  "matchmaking": {
+    "skill_variance": 100,
+    "max_wait_time": 120,
+    "region_preference": true,
+    "cross_region_threshold": 60
+  },
+  "networking": {
+    "max_packet_size": 1024,
+    "compression_enabled": true,
+    "encryption_enabled": true,
+    "heartbeat_interval": 5.0,
+    "reconnect_attempts": 3,
+    "reconnect_delay": 2.0
+  },
+  "performance": {
+    "max_bandwidth_per_client": 100000,
+    "priority_system_enabled": true,
+    "adaptive_tick_rate": true,
+    "min_tick_rate": 30,
+    "max_tick_rate": 120
+  },
+  "security": {
+    "rate_limiting": {
+      "enabled": true,
+      "max_packets_per_second": 120,
+      "burst_allowance": 10
+    },
+    "input_validation": true,
+    "position_validation": true,
+    "speed_hack_detection": true
+  },
+  "logging": {
+    "log_level": "info",
+    "log_network_events": true,
+    "log_player_actions": true,
+    "log_performance_metrics": true
+  }
+}

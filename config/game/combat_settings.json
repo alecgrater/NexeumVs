@@ -1,0 +1,45 @@
+{
+  "base_damage": 25,
+  "critical_multiplier": 1.5,
+  "combo_window": 0.8,
+  "hit_stun_duration": 0.3,
+  "block_damage_reduction": 0.7,
+  "max_combo_count": 5,
+  "damage_scaling": {
+    "combo_2": 0.9,
+    "combo_3": 0.8,
+    "combo_4": 0.7,
+    "combo_5": 0.6
+  },
+  "attack_types": {
+    "light": {
+      "damage": 20,
+      "speed": 0.3,
+      "range": 1.5,
+      "knockback": 2.0
+    },
+    "heavy": {
+      "damage": 40,
+      "speed": 0.6,
+      "range": 2.0,
+      "knockback": 5.0
+    },
+    "special": {
+      "damage": 60,
+      "speed": 0.9,
+      "range": 2.5,
+      "knockback": 8.0,
+      "cooldown": 3.0
+    }
+  },
+  "health_settings": {
+    "max_health": 100,
+    "health_regen_rate": 0.0,
+    "health_regen_delay": 5.0
+  },
+  "hitstun_settings": {
+    "light_hitstun": 0.2,
+    "heavy_hitstun": 0.4,
+    "special_hitstun": 0.6
+  }
+}
